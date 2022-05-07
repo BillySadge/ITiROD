@@ -22,6 +22,13 @@
 
   </head>
   <body>
+    <script type="text/javascript">
+      window.onload = function(){
+        let username = localStorage.getItem('uname');
+       document.getElementById('username-acc').innerText=username;
+      }
+      
+    </script>
     <div id="preloader"></div>
     
     <div class="container-wrapper two-column-grid-expand-two">
@@ -101,7 +108,9 @@
             <div class="account-img">
               <img src="../assets/img/me.png" alt="" />
             </div>
-            <div class="account-name">Andrei Chaplinskiy</div>
+            <div id="username-acc" class="account-name">
+              <!-- Andrei Chaplinskiy</div> -->
+            </div>
             <i class="fa-solid fa-sort-down"></i>
             <div class="dropdown-content">
               <a href="#">Account</a>

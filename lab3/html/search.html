@@ -17,6 +17,13 @@
     ></script>
   </head>
   <body>
+    <script type="text/javascript">
+      window.onload = function(){
+        let username = localStorage.getItem('uname');
+       document.getElementById('username-acc').innerText=username;
+      }
+      
+    </script>
     <div id="preloader"></div>
 
     <div class="container-wrapper two-column-grid-expand-two">
@@ -103,15 +110,17 @@
             </div>
           </div>
           <div></div>
-          <div class="account dropdown search">
+          <div class="account dropdown">
             <div class="account-img">
               <img src="../assets/img/me.png" alt="" />
             </div>
-            <div class="account-name">Andrei Chaplinskiy</div>
+            <div id="username-acc" class="account-name">
+              <!-- Andrei Chaplinskiy</div> -->
+            </div>
             <i class="fa-solid fa-sort-down"></i>
             <div class="dropdown-content">
               <a href="#">Account</a>
-              <a href="#">Logout</a>
+              <a href="#" class="logout">Logout</a>
             </div>
           </div>
         </div>
@@ -121,7 +130,7 @@
           </div>
           <ul id="test" class="small-cards-container">
             <li class="small-card small-card-1">
-
+              <a href="favorite.html">
               <section class="card-item">
                 <div class="small-card-image">
                   <img src="../assets/img/mgk.png" alt="" />
@@ -132,67 +141,77 @@
                 <span class="small-card-title">ArtistName</span>
                 <span class="small-card-details">SongName</span>
               </section>
-
+              </a>
             </li>
             <li class="small-card small-card-1">
-              <section class="card-item">
-                <div class="small-card-image">
-                  <img src="../assets/img/mgk.png" alt="" />
-                  <div class="play-button-overlay">
-                    <img src="../assets/img/play-button.png" alt="" />
+              <a href="favorite.html">
+                <section class="card-item">
+                  <div class="small-card-image">
+                    <img src="../assets/img/mgk.png" alt="" />
+                    <div class="play-button-overlay">
+                      <img src="../assets/img/play-button.png" alt="" />
+                    </div>
                   </div>
-                </div>
-                <span class="small-card-title">ArtistName</span>
-                <span class="small-card-details">SongName</span>
-              </section>
+                  <span class="small-card-title">ArtistName</span>
+                  <span class="small-card-details">SongName</span>
+                </section>
+                </a>
             </li>
             <li class="small-card small-card-1">
-              <section class="card-item">
-                <div class="small-card-image">
-                  <img src="../assets/img/mgk.png" alt="" />
-                  <div class="play-button-overlay">
-                    <img src="../assets/img/play-button.png" alt="" />
+              <a href="favorite.html">
+                <section class="card-item">
+                  <div class="small-card-image">
+                    <img src="../assets/img/mgk.png" alt="" />
+                    <div class="play-button-overlay">
+                      <img src="../assets/img/play-button.png" alt="" />
+                    </div>
                   </div>
-                </div>
-                <span class="small-card-title">ArtistName</span>
-                <span class="small-card-details">SongName</span>
-              </section>
+                  <span class="small-card-title">ArtistName</span>
+                  <span class="small-card-details">SongName</span>
+                </section>
+                </a>
             </li>
             <li class="small-card small-card-1">
-              <section class="card-item">
-                <div class="small-card-image">
-                  <img src="../assets/img/mgk.png" alt="" />
-                  <div class="play-button-overlay">
-                    <img src="../assets/img/play-button.png" alt="" />
+              <a href="favorite.html">
+                <section class="card-item">
+                  <div class="small-card-image">
+                    <img src="../assets/img/mgk.png" alt="" />
+                    <div class="play-button-overlay">
+                      <img src="../assets/img/play-button.png" alt="" />
+                    </div>
                   </div>
-                </div>
-                <span class="small-card-title">ArtistName</span>
-                <span class="small-card-details">SongName</span>
-              </section>
+                  <span class="small-card-title">ArtistName</span>
+                  <span class="small-card-details">SongName</span>
+                </section>
+                </a>
             </li>
             <li class="small-card small-card-1">
-              <section class="card-item">
-                <div class="small-card-image">
-                  <img src="../assets/img/mgk.png" alt="" />
-                  <div class="play-button-overlay">
-                    <img src="../assets/img/play-button.png" alt="" />
+              <a href="favorite.html">
+                <section class="card-item">
+                  <div class="small-card-image">
+                    <img src="../assets/img/mgk.png" alt="" />
+                    <div class="play-button-overlay">
+                      <img src="../assets/img/play-button.png" alt="" />
+                    </div>
                   </div>
-                </div>
-                <span class="small-card-title">ArtistName</span>
-                <span class="small-card-details">SongName</span>
-              </section>
+                  <span class="small-card-title">ArtistName</span>
+                  <span class="small-card-details">SongName</span>
+                </section>
+                </a>
             </li>
             <li class="small-card small-card-1">
-              <section class="card-item">
-                <div class="small-card-image">
-                  <img src="../assets/img/mgk.png" alt="" />
-                  <div class="play-button-overlay">
-                    <img src="../assets/img/play-button.png" alt="" />
+              <a href="favorite.html">
+                <section class="card-item">
+                  <div class="small-card-image">
+                    <img src="../assets/img/mgk.png" alt="" />
+                    <div class="play-button-overlay">
+                      <img src="../assets/img/play-button.png" alt="" />
+                    </div>
                   </div>
-                </div>
-                <span class="small-card-title">ArtistName</span>
-                <span class="small-card-details">SongName</span>
-              </section>
+                  <span class="small-card-title">ArtistName</span>
+                  <span class="small-card-details">SongName</span>
+                </section>
+                </a>
             </li>
           </ul>
           

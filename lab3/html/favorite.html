@@ -16,6 +16,10 @@
       src="https://kit.fontawesome.com/b3abebf129.js"
       crossorigin="anonymous"
     ></script>
+
+    <script defer src="/js/auth.js"></script>
+    <script defer src="/init.js"></script>
+
   </head>
   <body>
     <div id="preloader"></div>
@@ -33,7 +37,7 @@
         <nav class="nav">
           <ul class="nav-list font-md-grayed">
             <li class="svg">
-              <a href="../index.html">
+              <a href="../home.html">
                 <div class="img-home"></div>
                 <span> Home</span>
               </a>
@@ -45,7 +49,7 @@
               </a>
             </li>
             <li class="svg">
-              <a href="#">
+              <a href="library.html">
                 <div class="img-library"></div>
                 <span> Your Library</span>
               </a>
@@ -101,7 +105,7 @@
             <i class="fa-solid fa-sort-down"></i>
             <div class="dropdown-content">
               <a href="#">Account</a>
-              <a href="#">Logout</a>
+              <a href="#" class="logout">Logout</a>
             </div>
           </div>
         </div>
@@ -110,28 +114,28 @@
           <div class="intro-img">
             <img src="../assets//img/crystal.jpg" alt="" />
           </div>
-          <div class="killme">
+          <div class="title-description">
             <div class="playlist font-sm-white">
-              <h2>Playlist</h2>
+              <span>Playlist</span>
             </div>
             <div class="liked font-md-white">
-              <h2>Liked Songs</h2>
+              <span>Liked Songs</span>
             </div>
             <div class="number-songs font-sm-white">
-              <h2>5 songs</h2>
+              <span>5 songs</span>
             </div>
           </div>
         </div>
         <div class="just-button"><img src="../assets/img/play-button.png" alt=""></div>
 
         <div class="songs font-sm-white">
-          <table>
+          <table class="main-table">
             <thead>
               <tr>
                 <th scope="col">#</th>
                 <th scope="col"></th>
                 <th scope="col">Title</th>
-                <th scope="col">Author</th>
+                <th scope="col">Album</th>
                 <th scope="col">Date</th>
                 <th scope="col">Time</th>
                 <th scope="col"></th>
@@ -139,12 +143,22 @@
               </tr>
             </thead>
             <br/>
-            <tbody>
+            <tbody class="font-table">
               <tr>
+                <!-- <div class="row-button play-button-overlay">
+                  <img src="../assets/img/play-button.png" alt="" />
+                </div> -->
                 <th scope="row">#</th>
                 <td><img src="../assets/img/crystal.jpg" alt="" width="50px"></td>
-                <td>KEROSENE</th>
-                <td>Crystal Castles</td>
+                <td>
+                  <div class="table-title">
+                    KEROSENE
+                  </div>
+                  <div class="table-title-description font-xs-grayed">
+                    Crystal Castles
+                  </div>
+                </td>
+                <td>III</td>
                 <td>November 7, 2012</td>
                 <td>3:12</td>
                 <td><i class="fa-solid fa-ellipsis"></i></td>
@@ -152,7 +166,14 @@
               <tr>
                 <th scope="row">#</th>
                 <td><img src="../assets/img/gorillaz.jpg" alt="" width="50px"></td>
-                <td>Dare</th>
+                <td>
+                  <div class="table-title">
+                  Dare
+                </div>
+                <div class="table-title-description font-xs-grayed">
+                  Gorillaz
+                </div>
+              </td>
                 <td>Gorillaz</td>
                 <td>23 May, 2005</td>
                 <td>4:48</td>
@@ -161,7 +182,12 @@
               <tr>
                 <th scope="row">#</th>
                 <td><img src="../assets/img/impala.jpg" alt="" width="50px"></td>
-                <td>Let It Happen</th>
+                <td><div class="table-title">
+                  Let It Happen
+                </div>
+                <div class="table-title-description font-xs-grayed">
+                  Time Impala
+                </div></td>
                 <td>Tame Impala</td>
                 <td>August  17, 2015</td>
                 <td>4:16</td>
@@ -170,7 +196,14 @@
               <tr>
                 <th scope="row">#</th>
                 <td><img src="../assets/img/crystal.jpg" alt="" width="50px"></td>
-                <td>KEROSENE</th>
+                <td>
+                  <div class="table-title">
+                    Ideotique
+                  </div>
+                  <div class="table-title-description font-xs-grayed">
+                    Radiohead
+                  </div>
+              </th>
                 <td>III</td>
                 <td>November 7, 2012</td>
                 <td>3:12</td>
@@ -179,7 +212,14 @@
               <tr>
                 <th scope="row">#</th>
                 <td><img src="../assets/img/crystal.jpg" alt="" width="50px"></td>
-                <td>KEROSENE</th>
+                <td>
+                  <div class="table-title">
+                    Ideotique
+                  </div>
+                  <div class="table-title-description font-xs-grayed">
+                    Radiohead
+                  </div>
+                </th>
                 <td>III</td>
                 <td>November 7, 2012</td>
                 <td>3:12</td>
@@ -188,7 +228,14 @@
               <tr>
                 <th scope="row">#</th>
                 <td><img src="../assets/img/crystal.jpg" alt="" width="50px"></td>
-                <td>KEROSENE</th>
+                <td>
+                  <div class="table-title">
+                    Ideotique
+                  </div>
+                  <div class="table-title-description font-xs-grayed">
+                    Radiohead
+                  </div>
+                </th>
                 <td>III</td>
                 <td>November 7, 2012</td>
                 <td>3:12</td>

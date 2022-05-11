@@ -32,10 +32,10 @@
     <div class="container-wrapper two-column-grid-expand-two">
       <aside class="left-bar">
         <div class="logo">
-          <img src="assets/img/logo.svg" alt="logo" />
+          <img src="../assets/img/logo.svg" alt="logo" />
         </div>
         <div class="logo-small">
-          <img src="assets/img/logo-small.svg" alt="small-logo" />
+          <img src="../assets/img/logo-small.svg" alt="small-logo" />
         </div>
 
         <nav class="nav">
@@ -79,7 +79,9 @@
           </ul>
         </nav>
       </aside>
-      <div class="main">
+     
+
+      <div class="main" id="main">
         <div class="main-header four-column-grid-expand-two">
           <div></div>
           <div class="arrows-container">
@@ -94,79 +96,189 @@
               <img src="../assets/img/next.png" alt="" onclick="history.go(-1)" />
             </div>
           </div>
-          
+         
           <div class="empty"></div>
           <div class="account dropdown">
             <div class="account-img">
               <img src="../assets/img/me.png" alt="" />
             </div>
             <div id="username-acc" class="account-name">
-              
-              
             </div>
             <i class="fa-solid fa-sort-down"></i>
             <div class="dropdown-content">
               <a href="#">Account</a>
               <a href="#" class="logout">Logout</a>
             </div>
-          </div>  
+          </div>
         </div>
-
-
-
-
-
 
         <div class="main-card playlist-cards">
           <div class="main-card-header">
             <h1>Good Afternoon</h1>
           </div>
-
-          <div class="wrapper">
-            <div class="box box1">One</div>
-            <div class="box box2">Two
-                <!-- <section class="playlist-item" onclick="window.location='html/favorite.html'">
-                    <div class="playlist-card-image">
-                      <img src="../assets/img/mgk2.jpg" alt="mgk" />
-                      <div class="play-button-overlay-playlist">
-                        <img class="playlist-button-overlay" src="assets/img/play-button.png" alt="" />
-                      </div>
-                    </div>
-                    <span class="playlist-card-title">Liked Songs</span>
-                  </section> -->
-            </div>
-            <div class="box box3">Three</div>
-            <div class="box box4">Four</div>
-            <div class="box box5">Five</div>
-         </div>
-            
-            
-          
         </div>
 
         <div class="main-card">
-          <div class="main-card-header">
-            <h1>Made For You</h1>
-            <p class="see-all">SEE ALL</p>
-          </div>
-          
+          <ul id="test" class="small-cards-container">
+            <a href="favorite.html" class="fav-box">
+                <div class="box1">
+                  <div class="fav-songs-details">
+                    <span class="display-songs font-md-grayed">The Strokes Soma * Burgos Lost Cause * Unaloon CODEPENDENCY</span>
+                    <span class="fav-songs font-md-white">Favorite Songs</span>
+                    <span class="songs-number font-sm-white">3 Favorite Songs</span>
+                  </div>
+                </div>
+            </a>
+
+            <li class="small-card small-card-1">
+              
+              <a href="favorite.html">
+                <section
+                  class="card-item"
+                >
+                  <div class="small-card-image">
+                    <img src="../assets/img/mgk2.jpg" alt="mgk" />
+                    <div class="play-button-overlay">
+                      <img src="../assets/img/play-button.png" alt="" />
+                    </div>
+                  </div>
+                  <span class="small-card-title">Papercut</span>
+                  <span class="small-card-details">Machine Gun Kelly</span>
+                </section>
+              </a>
+            </li>
+            <li class="small-card small-card-1">
+              
+              <a href="favorite.html">
+              <section class="card-item">
+                <div class="small-card-image">
+                  <img src="../assets/img/frank.jpg" alt="frank ocean" />
+                  <div class="play-button-overlay">
+                    <img src="../assets/img/play-button.png" alt="" />
+                  </div>
+                </div>
+                <span class="small-card-title">Nights</span>
+                <span class="small-card-details">Frank Ocean</span>
+              </section>
+              </a>
+            </li>
+            <li class="small-card small-card-1">
+              <a href="favorite.html">
+              <section class="card-item">
+                <div class="small-card-image">
+                  <img src="../assets/img/crystal.jpg" alt="KEROSENE" />
+                  <div class="play-button-overlay">
+                    <img src="../assets/img/play-button.png" alt="" />
+                  </div>
+                </div>
+                <span class="small-card-title">KEROSENE</span>
+                <span class="small-card-details">Crystal Castles</span>
+              </section>
+              </a>
+            </li>
+            <li class="small-card small-card-1">
+              <a href="favorite.html">
+
+              <section class="card-item">
+                <div class="small-card-image">
+                  <img src="../assets/img/mitski.jpg" alt="mitski" />
+                  <div class="play-button-overlay">
+                    <img src="../assets/img/play-button.png" alt="" />
+                  </div>
+                </div>
+                <span class="small-card-title">Washing Machine Heart</span>
+                <span class="small-card-details">Mitski</span>
+              </section>
+              </a>
+            </li>
+            <li class="small-card small-card-1">
+              <a href="favorite.html">
+
+              <section class="card-item">
+                <div class="small-card-image">
+                  <img src="../assets/img/impala.jpg" alt="implata" />
+                  <div class="play-button-overlay">
+                    <img src="../assets/img/play-button.png" alt="" />
+                  </div>
+                </div>
+                <span class="small-card-title">Let It Happen</span>
+                <span class="small-card-details">Tame Impala</span>
+              </section>
+              </a>
+            </li>
+            <li class="small-card small-card-1">
+              <a href="favorite.html">
+
+              <section class="card-item">
+                <div class="small-card-image">
+                  <img src="../assets/img/q.jpg" alt="" />
+                  <div class="play-button-overlay">
+                    <img src="../assets/img/play-button.png" alt="" />
+                  </div>
+                </div>
+                <span class="small-card-title">Take Me Where Your Heart Is</span>
+                <span class="small-card-details">Q</span>
+              </section>
+              </a>
+            </li>
+            <li class="small-card small-card-1">
+              <a href="favorite.html">
+
+              <section class="card-item">
+                <div class="small-card-image">
+                  <img src="../assets/img/q.jpg" alt="" />
+                  <div class="play-button-overlay">
+                    <img src="../assets/img/play-button.png" alt="" />
+                  </div>
+                </div>
+                <span class="small-card-title">Take Me Where Your Heart Is</span>
+                <span class="small-card-details">Q</span>
+              </section>
+              </a>
+            </li>
+            <li class="small-card small-card-1">
+              <a href="favorite.html">
+
+              <section class="card-item">
+                <div class="small-card-image">
+                  <img src="../assets/img/q.jpg" alt="" />
+                  <div class="play-button-overlay">
+                    <img src="../assets/img/play-button.png" alt="" />
+                  </div>
+                </div>
+                <span class="small-card-title">Take Me Where Your Heart Is</span>
+                <span class="small-card-details">Q</span>
+              </section>
+              </a>
+            </li>
+            <li class="small-card small-card-1">
+              <a href="favorite.html">
+
+              <section class="card-item">
+                <div class="small-card-image">
+                  <img src="../assets/img/q.jpg" alt="" />
+                  <div class="play-button-overlay">
+                    <img src="../assets/img/play-button.png" alt="" />
+                  </div>
+                </div>
+                <span class="small-card-title">Take Me Where Your Heart Is</span>
+                <span class="small-card-details">Q</span>
+              </section>
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="main-card main-card-2">
-          <div class="main-card-header">
-            <h1>Popular Songs / Artists</h1>
-            <p class="see-all">SEE ALL</p>
-          </div>
-          
-        </div>
+        
       </div>
+        
 
       <footer class="player three-column-grid-expand-two">
         <div class="player-left-bar">
           <div class="player-left-bar__img track-art">
             
             <!-- <img class="track-art"> -->
-            <img  src="assets/img/radiohead.jpg" alt="" />
+            <img  src="../assets/img/radiohead.jpg" alt="" />
           </div>
           <div class="player-left-bar__title">
             <span class="player-left-bar__title-name track-name font-sm-white">
@@ -177,7 +289,7 @@
             </span>
           </div>
           <i class="fa-solid fa-heart"></i>
-          <img src="assets/img/mini-player.svg" alt="" />
+          <img src="..assets/img/mini-player.svg" alt="" />
         </div>
 
         <div class="player-center">
@@ -200,7 +312,7 @@
           <a href="#popup1"><i class="fa-solid fa-align-justify"></i></a>
           <div id="popup1" class="overlay">
             <div class="popup">
-              <img class="pi2" src="assets/img/radiohead.jpg" alt="" />
+              <img class="pi2" src="../assets/img/radiohead.jpg" alt="" />
               <span class="popup-name">Ideotique</span>
               <span class="popup-details">Radiohead</span>
               <a class="close" href="#">&times;</a>
@@ -234,7 +346,7 @@
 
     <script src="js/main.js"></script>
     <script>
-      var loader = document.getElementById("preloader");
+      let loader = document.getElementById("preloader");
 
       window.addEventListener("load", function () {
         loader.style.display = "none";

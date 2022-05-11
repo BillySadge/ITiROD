@@ -10,7 +10,7 @@ class Login {
 
 		this.form.addEventListener("submit", (e) => {
 			e.preventDefault();
-			var error = 0;
+			let error = 0;
 			self.fields.forEach((field) => {
 				const input = document.querySelector(`#${field}`);
 				if (self.validateFields(input) == false) {

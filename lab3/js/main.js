@@ -46,7 +46,7 @@ function random_bg_color() {
 
   let bgColor = "rgb(" + red + "," + green + "," + blue + ")";
   let gradient = "linear-gradient(180deg, " + bgColor + "0%, rgba(18,18,18,1) 50%)";
-  var element = document.getElementById("main");  
+  let element = document.getElementById("main");  
   // element.style.transition = "all 2s linear";
   // element.style.background = bgColor;
 

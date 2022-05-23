@@ -1,0 +1,222 @@
+  <div id="main" class="main">
+    <div class="main-header four-column-grid-expand-two">
+      <div></div>
+      <div class="arrows-container">
+        <div class="arrows">
+          <img
+            src="../assets/img/left-arrow.png"
+            alt=""
+            onclick="history.back()"
+          />
+        </div>
+        <div class="arrows">
+          <!-- next page rework -->
+          <img
+            src="../assets/img/next.png"
+            alt=""
+            onclick="history.go(-1)"
+          />
+        </div>
+      </div>
+      <div class="empty"></div>
+  
+      <div class="account dropdown">
+        <div class="account-img">
+          <img src="../assets/img/me.png" alt="" />
+        </div>
+        <div id="username-acc" class="account-name">
+          <!-- Andrei Chaplinskiy</div> -->
+        </div>
+        <i class="fa-solid fa-sort-down"></i>
+        <div class="dropdown-content">
+          <a href="#">Account</a>
+          <a href="#" class="logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="intro">
+      <div class="intro-img">
+        <img src="../assets//img/crystal.jpg" alt="" />
+      </div>
+      <div class="title-description">
+        <div class="playlist font-sm-white">
+          <span>Playlist</span>
+        </div>
+        <div class="liked font-md-white">
+          <span>Liked Songs</span>
+        </div>
+        <div class="number-songs font-sm-white">
+          <span>5 songs</span>
+        </div>
+      </div>
+    </div>
+    <div class="just-button"><img src="../assets/img/play-button.png" alt=""></div>
+  
+    <div class="songs font-sm-white">
+      <table class="main-table sortable">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col"></th>
+            <th scope="col">Title</th>
+            <th scope="col">Album</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <br/>
+        <tbody class="font-table">
+          <tr>
+            <!-- <div class="row-button play-button-overlay">
+              <img src="../assets/img/play-button.png" alt="" />
+            </div> -->
+            <th scope="row">1</th>
+            <td><img src="../assets/img/crystal.jpg" alt="" width="50px"></td>
+            <td>
+              <div class="table-title">
+                KEROSENE
+              </div>
+              <div class="table-title-description font-xs-grayed">
+                Crystal Castles
+              </div>
+            </td>
+            <td>III</td>
+            <td>November 7, 2012</td>
+            <td>3:12</td>
+            <td class="menu"><i class="fa-solid fa-ellipsis"></i>
+              <ul class="submenu">
+                  <li><a href="#">add to queue</a></li>
+                  <li><a href="#">add to playlist</a>
+                  <ul class="submenu2">
+                    <li><a href="#">playlist 1</a></li>
+                    <li><a href="#">playlist 2</a></li>
+                  </ul></li>
+              </ul>
+          </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td><img src="../assets/img/gorillaz.jpg" alt="" width="50px"></td>
+            <td>
+              <div class="table-title">
+              Dare
+            </div>
+            <div class="table-title-description font-xs-grayed">
+              Gorillaz
+            </div>
+            </td>
+            <td>Gorillaz</td>
+            <td>23 May, 2005</td>
+            <td>4:48</td>
+            <td class="menu"><i class="fa-solid fa-ellipsis"></i>
+              <ul class="submenu">
+                <li><a href="#">add to queue</a></li>
+                <li><a href="#">add to playlist</a>
+                <ul class="submenu2">
+                  <li><a href="#">playlist 1</a></li>
+                  <li><a href="#">playlist 2</a></li>
+                </ul></li>
+            </ul></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td><img src="../assets/img/impala.jpg" alt="" width="50px"></td>
+            <td><div class="table-title">
+              Let It Happen
+            </div>
+            <div class="table-title-description font-xs-grayed">
+              Time Impala
+            </div></td>
+            <td>Tame Impala</td>
+            <td>August  17, 2015</td>
+            <td>4:16</td>
+            <td class="menu"><i class="fa-solid fa-ellipsis"></i>
+              <ul class="submenu">
+                <li><a href="#">add to queue</a></li>
+                <li><a href="#">add to playlist</a>
+                <ul class="submenu2">
+                  <li><a href="#">playlist 1</a></li>
+                  <li><a href="#">playlist 2</a></li>
+                </ul></li>
+            </ul></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td><img src="../assets/img/crystal.jpg" alt="" width="50px"></td>
+            <td>
+              <div class="table-title">
+                Ideotique
+              </div>
+              <div class="table-title-description font-xs-grayed">
+                Radiohead
+              </div>
+          </th>
+            <td>III</td>
+            <td>November 7, 2012</td>
+            <td>3:12</td>
+            <td class="menu"><i class="fa-solid fa-ellipsis"></i>
+              <ul class="submenu">
+                <li><a href="#">add to queue</a></li>
+                <li><a href="#">add to playlist</a>
+                <ul class="submenu2">
+                  <li><a href="#">playlist 1</a></li>
+                  <li><a href="#">playlist 2</a></li>
+                </ul></li>
+            </ul></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td><img src="../assets/img/crystal.jpg" alt="" width="50px"></td>
+            <td>
+              <div class="table-title">
+                Ideotique
+              </div>
+              <div class="table-title-description font-xs-grayed">
+                Radiohead
+              </div>
+            </th>
+            <td>III</td>
+            <td>November 7, 2012</td>
+            <td>3:12</td>
+            <td class="menu"><i class="fa-solid fa-ellipsis"></i>
+              <ul class="submenu">
+                <li><a href="#">add to queue</a></li>
+                <li><a href="#">add to playlist</a>
+                <ul class="submenu2">
+                  <li><a href="#">playlist 1</a></li>
+                  <li><a href="#">playlist 2</a></li>
+                </ul></li>
+            </ul></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td><img src="../assets/img/crystal.jpg" alt="" width="50px"></td>
+            <td>
+              <div class="table-title">
+                Ideotique
+              </div>
+              <div class="table-title-description font-xs-grayed">
+                Radiohead
+              </div>
+            </th>
+            <td>III</td>
+            <td>November 7, 2012</td>
+            <td>3:12</td>
+            <td class="menu"><i class="fa-solid fa-ellipsis"></i>
+              <ul class="submenu">
+                <li><a href="#">add to queue</a></li>
+                <li><a href="#">add to playlist</a>
+                <ul class="submenu2">
+                  <li><a href="#">playlist 1</a></li>
+                  <li><a href="#">playlist 2</a></li>
+                </ul></li>
+            </ul></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+

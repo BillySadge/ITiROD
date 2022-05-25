@@ -18,4 +18,5 @@ class Auth {
 		localStorage.removeItem("uname");
 		window.location.replace("/");
 	}
+
 }

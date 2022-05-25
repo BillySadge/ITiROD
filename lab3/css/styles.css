@@ -1383,7 +1383,7 @@ a{
     /* background: white; */
     /* background: linear-gradient(180deg, rgb(144, 89, 134) 0%, rgb(14, 4, 58) 50%); */
     height: calc(100vh - 8.2rem);
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     /* background-color: ; */
 }
 
@@ -1924,4 +1924,15 @@ ul#playlist-list > li > a:hover {
     overflow: hidden;
     caret-color: lightgreen;
     outline: none;
+}
+
+
+
+.playlist-buttons{
+    display: flex;
+}
+
+.middle-heart{
+    color:white;
+    font-size: 3rem;
 }

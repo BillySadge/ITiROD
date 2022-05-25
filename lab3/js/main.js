@@ -1,4 +1,6 @@
 
+// import {track_list} from 'data.js'
+
 // let now_playing = document.querySelector(".now-playing");
 let track_art = document.querySelector(".track-art");
 let track_name = document.querySelector(".track-name");
@@ -302,8 +304,8 @@ function fillFavPage(songs){
 
 
 function filltheContentOfLibrary(favPlaylists,favSongs){
-  // updatePlaylistStorage(favPlaylists);
-  // updateStorage(favSongs);  
+  updatePlaylistStorage(favPlaylists);
+  updateStorage(favSongs);
   let box = document.getElementById("liked-box");
   let songsStr = "";
   for (i = 0; i < 3 && i<favSongs.length; i++){
@@ -479,7 +481,8 @@ function rowHandler(isPlaylist){
           playTrack();
         }else{
           let favoriteSongs = favFilter(track_list);
-          loadTrack(favoriteSongs[ident-1]);
+          console.log(favoriteSongs[ident-1])
+          loadTrack(track_list.indexOf(favoriteSongs[ident-1]));
           playTrack();
         }
         

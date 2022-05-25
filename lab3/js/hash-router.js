@@ -76,7 +76,6 @@ const locationHandler = async () => {
 			if (favSongsFromStorage !== null){
 				changeData(favSongsFromStorage);
 				fillFavPage(favSongsFromStorage);
-
 			}else{
 				fillFavPage(favoriteSongs);
 			}
@@ -94,7 +93,7 @@ const locationHandler = async () => {
 			const found = playlists.find(element =>(":" + element.id) === request.playlistId);
 			if (favPlaylistFromStorage !== null){
 				chagnePlaylistData(favPlaylistFromStorage);
-				// changeData(favSongsFromStorage);
+				changeData(favSongsFromStorage);
 				fillPlaylistPage(found.songs,found.name,found.isFavorite);
 			}else{
 				fillPlaylistPage(found.songs,found.name,found.isFavorite);

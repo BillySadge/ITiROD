@@ -1,0 +1,186 @@
+<div id="main" class="main">
+  <div class="main-header four-column-grid-expand-two">
+    <div class="search-container input-group">
+      <div class="input-group">
+        <div class="icon-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <input
+          type="search"
+          id="site-search"
+          name="seatch"
+          placeholder="search for playlist or song..."
+          onkeyup="search()"
+        />
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div class="account dropdown">
+      <div class="account-img">
+        <img src="../assets/img/me.png" alt="" />
+      </div>
+      <div id="username-acc" class="account-name"></div>
+      <i class="fa-solid fa-sort-down"></i>
+      <div class="dropdown-content">
+        <a href="#">account</a>
+        <a href="#" class="logout">logout</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-card main-card-2">
+    <div class="main-card-header">
+      <h1>popular songs / artists</h1>
+    </div>
+    <ul id="search-page" class="small-cards-container">
+      <li class="small-card small-card-1">
+        <a href="#playlist/:12">
+          <section class="card-item">
+            <div class="small-card-image">
+              <img src="../assets/img/gorillaz.jpg" alt="" />
+              <div class="play-button-overlay">
+                <img src="../assets/img/play-button.png" alt="" />
+              </div>
+            </div>
+            <span class="small-card-title">gorillaz</span>
+            <span class="small-card-details">dare</span>
+          </section>
+        </a>
+      </li>
+      <li class="small-card small-card-1">
+        <a href="#playlist/:13">
+          <section class="card-item">
+            <div class="small-card-image">
+              <img src="../assets/img/impala.jpg" alt="" />
+              <div class="play-button-overlay">
+                <img src="../assets/img/play-button.png" alt="" />
+              </div>
+            </div>
+            <span class="small-card-title">tame impala</span>
+            <span class="small-card-details">let it happen</span>
+          </section>
+        </a>
+      </li>
+      <li class="small-card small-card-1">
+        <a href="#playlist/:14">
+          <section class="card-item">
+            <div class="small-card-image">
+              <img src="../assets/img/mgk2.jpg" alt="" />
+              <div class="play-button-overlay">
+                <img src="../assets/img/play-button.png" alt="" />
+              </div>
+            </div>
+            <span class="small-card-title">machine gun kelly</span>
+            <span class="small-card-details">papercuts</span>
+          </section>
+        </a>
+      </li>
+      <li class="small-card small-card-1">
+        <a href="#playlist/:15">
+          <section class="card-item">
+            <div class="small-card-image">
+              <img src="../assets/img/char.jpg" alt="" />
+              <div class="play-button-overlay">
+                <img src="../assets/img/play-button.png" alt="" />
+              </div>
+            </div>
+            <span class="small-card-title">crystal castles</span>
+            <span class="small-card-details">char</span>
+          </section>
+        </a>
+      </li>
+      <li class="small-card small-card-1">
+        <a href="#playlist/:16">
+          <section class="card-item">
+            <div class="small-card-image">
+              <img src="../assets/img/crystal.jpg" alt="" />
+              <div class="play-button-overlay">
+                <img src="../assets/img/play-button.png" alt="" />
+              </div>
+            </div>
+            <span class="small-card-title">crystal castles</span>
+            <span class="small-card-details">transgender</span>
+          </section>
+        </a>
+      </li>
+      <li class="small-card small-card-1">
+        <a href="#playlist/:17">
+          <section class="card-item">
+            <div class="small-card-image">
+              <img src="../assets/img/crystal2.png" alt="" />
+              <div class="play-button-overlay">
+                <img src="../assets/img/play-button.png" alt="" />
+              </div>
+            </div>
+            <span class="small-card-title">crystal castles</span>
+            <span class="small-card-details">crimewave</span>
+          </section>
+        </a>
+      </li>
+    </ul>
+
+    <div class="main-card-header" id="genres-header">
+      <h1>top genres</h1>
+    </div>
+
+    <ul id="genre-cards" class="small-cards-container-genre">
+      <li class="genre-body-item genre-item">
+        <section>
+          <a href="#">
+            <h3>podcast</h3>
+            <img src="../assets/img/crystal.jpg" alt="" />
+          </a>
+        </section>
+      </li>
+      <li class="genre-body-item genre-item">
+        <section>
+          <a href="#">
+            <h3>podcast</h3>
+            <img src="../assets/img/crystal.jpg" alt="" />
+          </a>
+        </section>
+      </li>
+      <li class="genre-body-item genre-item">
+        <section>
+          <a href="#">
+            <h3>podcast</h3>
+            <img src="../assets/img/crystal.jpg" alt="" />
+          </a>
+        </section>
+      </li>
+      <li class="genre-body-item genre-item">
+        <section>
+          <a href="#">
+            <h3>podcast</h3>
+            <img src="../assets/img/crystal.jpg" alt="" />
+          </a>
+        </section>
+      </li>
+      <li class="genre-body-item genre-item">
+        <section>
+          <a href="#">
+            <h3>podcast</h3>
+            <img src="../assets/img/crystal.jpg" alt="" />
+          </a>
+        </section>
+      </li>
+      <li class="genre-body-item genre-item">
+        <section>
+          <a href="#">
+            <h3>podcast</h3>
+            <img src="../assets/img/crystal.jpg" alt="" />
+          </a>
+        </section>
+      </li>
+      <li class="genre-body-item genre-item">
+        <section>
+          <a href="#">
+            <h3>podcast</h3>
+            <img src="../assets/img/crystal.jpg" alt="" />
+          </a>
+        </section>
+      </li>
+    </ul>
+  </div>
+</div>
